@@ -19,6 +19,7 @@
 		850C5AE81E54574E007D541D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 850C5AE31E54574E007D541D /* GoogleService-Info.plist */; };
 		850C5AEC1E5458AB007D541D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850C5AEA1E5458AB007D541D /* LaunchScreen.storyboard */; };
 		850C5AEF1E5458B5007D541D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850C5AED1E5458B5007D541D /* Main.storyboard */; };
+		857410191E546C78001F93C1 /* UploadPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857410181E546C78001F93C1 /* UploadPhotoViewController.swift */; };
 		D04D2731EA70C85B1EC20889 /* Pods_Pets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B053188B63224CA5DE8B987C /* Pods_Pets.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		850C5AE41E54574E007D541D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Pets/Info.plist; sourceTree = SOURCE_ROOT; };
 		850C5AEB1E5458AB007D541D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pets/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		850C5AEE1E5458B5007D541D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pets/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		857410181E546C78001F93C1 /* UploadPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPhotoViewController.swift; sourceTree = SOURCE_ROOT; };
 		B053188B63224CA5DE8B987C /* Pods_Pets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26C511E9B41D0C70CEA493F /* Pods-Pets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pets/Pods-Pets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +62,7 @@
 				850C5AD01E5455FB007D541D /* LoginViewController.swift */,
 				850C5AD11E5455FB007D541D /* SignupViewController.swift */,
 				850C5AD21E5455FB007D541D /* UsersViewController.swift */,
+				857410181E546C78001F93C1 /* UploadPhotoViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				850C5AE51E54574E007D541D /* AppDelegate.swift in Sources */,
+				857410191E546C78001F93C1 /* UploadPhotoViewController.swift in Sources */,
 				850C5AD91E545656007D541D /* UserCell.swift in Sources */,
 				850C5AD31E5455FB007D541D /* LoginViewController.swift in Sources */,
 				850C5AD41E5455FB007D541D /* SignupViewController.swift in Sources */,
