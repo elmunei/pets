@@ -1,9 +1,9 @@
 //
 //  SignupViewController.swift
-//  InstagramLike
+//  Pets
 //
-//  Created by Vasil Nunev on 27/11/2016.
-//  Copyright © 2016 Vasil Nunev. All rights reserved.
+//  Created by Elvis Tapfumanei on 27/11/2017.
+//  Copyright © 2017 Elvis Tapfumanei. All rights reserved.
 //
 
 import UIKit
@@ -28,7 +28,7 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         picker.delegate = self
         
-        let storage = FIRStorage.storage().reference(forURL: "gs://instagram-f3f20.appspot.com")
+        let storage = FIRStorage.storage().reference(forURL: "gs://pets-9778d.appspot.com")
         
         ref = FIRDatabase.database().reference()
         userStorage = storage.child("users")

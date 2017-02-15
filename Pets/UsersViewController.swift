@@ -1,9 +1,9 @@
 //
 //  UsersViewController.swift
-//  InstagramLike
+//  Pets
 //
-//  Created by Vasil Nunev on 29/11/2016.
-//  Copyright © 2016 Vasil Nunev. All rights reserved.
+//  Created by Elvis Tapfumanei on 01/02/2017.
+//  Copyright © 2017 Elvis Tapfumanei. All rights reserved.
 //
 
 import UIKit
@@ -65,7 +65,7 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return user.count ?? 0
+        return user.count
     }
     
     

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2472AF101E1C434F407DE28A /* Pods_InstagramLike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDB7B77FE21C06706F446E1 /* Pods_InstagramLike.framework */; };
-		38FEDBCC1DEB513200EF3DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FEDBCA1DEB513200EF3DFE /* Main.storyboard */; };
-		38FEDBD11DEB513200EF3DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FEDBCF1DEB513200EF3DFE /* LaunchScreen.storyboard */; };
 		850C5AD31E5455FB007D541D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850C5AD01E5455FB007D541D /* LoginViewController.swift */; };
 		850C5AD41E5455FB007D541D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850C5AD11E5455FB007D541D /* SignupViewController.swift */; };
 		850C5AD51E5455FB007D541D /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850C5AD21E5455FB007D541D /* UsersViewController.swift */; };
@@ -20,14 +17,13 @@
 		850C5AE61E54574E007D541D /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850C5AE11E54574E007D541D /* CircleView.swift */; };
 		850C5AE71E54574E007D541D /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850C5AE21E54574E007D541D /* FancyView.swift */; };
 		850C5AE81E54574E007D541D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 850C5AE31E54574E007D541D /* GoogleService-Info.plist */; };
+		850C5AEC1E5458AB007D541D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850C5AEA1E5458AB007D541D /* LaunchScreen.storyboard */; };
+		850C5AEF1E5458B5007D541D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850C5AED1E5458B5007D541D /* Main.storyboard */; };
 		D04D2731EA70C85B1EC20889 /* Pods_Pets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B053188B63224CA5DE8B987C /* Pods_Pets.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1EDB7B77FE21C06706F446E1 /* Pods_InstagramLike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramLike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FEDBC31DEB513200EF3DFE /* Pets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pets.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		38FEDBCB1DEB513200EF3DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		38FEDBD01DEB513200EF3DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81AD3E7E2D76B83A5F8D3C6E /* Pods-Pets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pets/Pods-Pets.debug.xcconfig"; sourceTree = "<group>"; };
 		850C5AD01E5455FB007D541D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Pets/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		850C5AD11E5455FB007D541D /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewController.swift; path = Pets/SignupViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -40,6 +36,8 @@
 		850C5AE21E54574E007D541D /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FancyView.swift; path = Pets/FancyView.swift; sourceTree = SOURCE_ROOT; };
 		850C5AE31E54574E007D541D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Pets/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		850C5AE41E54574E007D541D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Pets/Info.plist; sourceTree = SOURCE_ROOT; };
+		850C5AEB1E5458AB007D541D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pets/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		850C5AEE1E5458B5007D541D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pets/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		B053188B63224CA5DE8B987C /* Pods_Pets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26C511E9B41D0C70CEA493F /* Pods-Pets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pets/Pods-Pets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2472AF101E1C434F407DE28A /* Pods_InstagramLike.framework in Frameworks */,
 				D04D2731EA70C85B1EC20889 /* Pods_Pets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,17 +101,16 @@
 		38FEDBC51DEB513200EF3DFE /* Pets */ = {
 			isa = PBXGroup;
 			children = (
-				850C5AE01E54574E007D541D /* AppDelegate.swift */,
-				850C5AE11E54574E007D541D /* CircleView.swift */,
-				850C5AE21E54574E007D541D /* FancyView.swift */,
-				850C5AE31E54574E007D541D /* GoogleService-Info.plist */,
-				850C5AE41E54574E007D541D /* Info.plist */,
+				850C5AF01E5458E5007D541D /* Tweaks */,
 				3848DFE21DEE23EE00F4A37E /* Objects */,
 				3848DFE11DEE23DE00F4A37E /* Custom Cell */,
 				3848DFE01DEE23D000F4A37E /* View Controllers */,
-				38FEDBCA1DEB513200EF3DFE /* Main.storyboard */,
-				38FEDBCF1DEB513200EF3DFE /* LaunchScreen.storyboard */,
 				850C5ADA1E545676007D541D /* Assets.xcassets */,
+				850C5AE01E54574E007D541D /* AppDelegate.swift */,
+				850C5AE31E54574E007D541D /* GoogleService-Info.plist */,
+				850C5AE41E54574E007D541D /* Info.plist */,
+				850C5AED1E5458B5007D541D /* Main.storyboard */,
+				850C5AEA1E5458AB007D541D /* LaunchScreen.storyboard */,
 			);
 			name = Pets;
 			path = InstagramLike;
@@ -123,10 +119,18 @@
 		723D15F49C4CBF343E7826B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1EDB7B77FE21C06706F446E1 /* Pods_InstagramLike.framework */,
 				B053188B63224CA5DE8B987C /* Pods_Pets.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		850C5AF01E5458E5007D541D /* Tweaks */ = {
+			isa = PBXGroup;
+			children = (
+				850C5AE11E54574E007D541D /* CircleView.swift */,
+				850C5AE21E54574E007D541D /* FancyView.swift */,
+			);
+			name = Tweaks;
 			sourceTree = "<group>";
 		};
 		E19AFDA199BB29318405C7E7 /* Pods */ = {
@@ -201,10 +205,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38FEDBD11DEB513200EF3DFE /* LaunchScreen.storyboard in Resources */,
+				850C5AEC1E5458AB007D541D /* LaunchScreen.storyboard in Resources */,
 				850C5AE81E54574E007D541D /* GoogleService-Info.plist in Resources */,
-				38FEDBCC1DEB513200EF3DFE /* Main.storyboard in Resources */,
 				850C5ADB1E545676007D541D /* Assets.xcassets in Resources */,
+				850C5AEF1E5458B5007D541D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,20 +281,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		38FEDBCA1DEB513200EF3DFE /* Main.storyboard */ = {
+		850C5AEA1E5458AB007D541D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				38FEDBCB1DEB513200EF3DFE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		38FEDBCF1DEB513200EF3DFE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				38FEDBD01DEB513200EF3DFE /* Base */,
+				850C5AEB1E5458AB007D541D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		850C5AED1E5458B5007D541D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				850C5AEE1E5458B5007D541D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
