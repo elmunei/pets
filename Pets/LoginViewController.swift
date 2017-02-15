@@ -1,9 +1,9 @@
 //
 //  LoginViewController.swift
-//  InstagramLike
+//  Pets
 //
-//  Created by Vasil Nunev on 27/11/2016.
-//  Copyright © 2016 Vasil Nunev. All rights reserved.
+//  Created by Elvis Tapfumanei on 27/11/2017.
+//  Copyright © 2017 Elvis Tapfumanei. All rights reserved.
 //
 
 import UIKit
