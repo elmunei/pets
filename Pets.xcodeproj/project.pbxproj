@@ -20,6 +20,19 @@
 		850C5AEC1E5458AB007D541D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850C5AEA1E5458AB007D541D /* LaunchScreen.storyboard */; };
 		850C5AEF1E5458B5007D541D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850C5AED1E5458B5007D541D /* Main.storyboard */; };
 		857410191E546C78001F93C1 /* UploadPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857410181E546C78001F93C1 /* UploadPhotoViewController.swift */; };
+		8574101B1E55966E001F93C1 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8574101A1E55966E001F93C1 /* PostCell.swift */; };
+		8574101D1E55C2D5001F93C1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8574101C1E55C2D5001F93C1 /* Post.swift */; };
+		8574101F1E55C4CC001F93C1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8574101E1E55C4CC001F93C1 /* FeedViewController.swift */; };
+		857410211E574161001F93C1 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857410201E574161001F93C1 /* RoundBtn.swift */; };
+		857410231E5744A3001F93C1 /* SetUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857410221E5744A3001F93C1 /* SetUPViewController.swift */; };
+		857410301E57498E001F93C1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8574102C1E57498E001F93C1 /* Bolts.framework */; };
+		857410311E57498E001F93C1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8574102D1E57498E001F93C1 /* FBSDKCoreKit.framework */; };
+		857410321E57498E001F93C1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8574102E1E57498E001F93C1 /* FBSDKLoginKit.framework */; };
+		857410331E57498E001F93C1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8574102F1E57498E001F93C1 /* FBSDKShareKit.framework */; };
+		857410361E574D91001F93C1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857410341E574D91001F93C1 /* DataService.swift */; };
+		857410371E574D91001F93C1 /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857410351E574D91001F93C1 /* Pets.swift */; };
+		857410391E574FBC001F93C1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857410381E574FBC001F93C1 /* WelcomeViewController.swift */; };
+		8574103B1E576233001F93C1 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 8574103A1E576233001F93C1 /* splash.png */; };
 		D04D2731EA70C85B1EC20889 /* Pods_Pets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B053188B63224CA5DE8B987C /* Pods_Pets.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +53,19 @@
 		850C5AEB1E5458AB007D541D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pets/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		850C5AEE1E5458B5007D541D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pets/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		857410181E546C78001F93C1 /* UploadPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPhotoViewController.swift; sourceTree = SOURCE_ROOT; };
+		8574101A1E55966E001F93C1 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = SOURCE_ROOT; };
+		8574101C1E55C2D5001F93C1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = SOURCE_ROOT; };
+		8574101E1E55C4CC001F93C1 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = SOURCE_ROOT; };
+		857410201E574161001F93C1 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = SOURCE_ROOT; };
+		857410221E5744A3001F93C1 /* SetUPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUPViewController.swift; sourceTree = SOURCE_ROOT; };
+		8574102C1E57498E001F93C1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		8574102D1E57498E001F93C1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		8574102E1E57498E001F93C1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		8574102F1E57498E001F93C1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		857410341E574D91001F93C1 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = SOURCE_ROOT; };
+		857410351E574D91001F93C1 /* Pets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = SOURCE_ROOT; };
+		857410381E574FBC001F93C1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		8574103A1E576233001F93C1 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = Pets/Assets.xcassets/splash.png; sourceTree = SOURCE_ROOT; };
 		B053188B63224CA5DE8B987C /* Pods_Pets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26C511E9B41D0C70CEA493F /* Pods-Pets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pets/Pods-Pets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +76,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04D2731EA70C85B1EC20889 /* Pods_Pets.framework in Frameworks */,
+				857410311E57498E001F93C1 /* FBSDKCoreKit.framework in Frameworks */,
+				857410331E57498E001F93C1 /* FBSDKShareKit.framework in Frameworks */,
+				857410321E57498E001F93C1 /* FBSDKLoginKit.framework in Frameworks */,
+				857410301E57498E001F93C1 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +93,9 @@
 				850C5AD11E5455FB007D541D /* SignupViewController.swift */,
 				850C5AD21E5455FB007D541D /* UsersViewController.swift */,
 				857410181E546C78001F93C1 /* UploadPhotoViewController.swift */,
+				8574101E1E55C4CC001F93C1 /* FeedViewController.swift */,
+				857410221E5744A3001F93C1 /* SetUPViewController.swift */,
+				857410381E574FBC001F93C1 /* WelcomeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -71,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				850C5AD81E545656007D541D /* UserCell.swift */,
+				8574101A1E55966E001F93C1 /* PostCell.swift */,
 			);
 			name = "Custom Cell";
 			sourceTree = "<group>";
@@ -79,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				850C5AD61E545640007D541D /* User.swift */,
+				8574101C1E55C2D5001F93C1 /* Post.swift */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -112,6 +147,7 @@
 				850C5AE01E54574E007D541D /* AppDelegate.swift */,
 				850C5AE31E54574E007D541D /* GoogleService-Info.plist */,
 				850C5AE41E54574E007D541D /* Info.plist */,
+				8574103A1E576233001F93C1 /* splash.png */,
 				850C5AED1E5458B5007D541D /* Main.storyboard */,
 				850C5AEA1E5458AB007D541D /* LaunchScreen.storyboard */,
 			);
@@ -122,6 +158,10 @@
 		723D15F49C4CBF343E7826B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8574102C1E57498E001F93C1 /* Bolts.framework */,
+				8574102D1E57498E001F93C1 /* FBSDKCoreKit.framework */,
+				8574102E1E57498E001F93C1 /* FBSDKLoginKit.framework */,
+				8574102F1E57498E001F93C1 /* FBSDKShareKit.framework */,
 				B053188B63224CA5DE8B987C /* Pods_Pets.framework */,
 			);
 			name = Frameworks;
@@ -130,6 +170,9 @@
 		850C5AF01E5458E5007D541D /* Tweaks */ = {
 			isa = PBXGroup;
 			children = (
+				857410341E574D91001F93C1 /* DataService.swift */,
+				857410351E574D91001F93C1 /* Pets.swift */,
+				857410201E574161001F93C1 /* RoundBtn.swift */,
 				850C5AE11E54574E007D541D /* CircleView.swift */,
 				850C5AE21E54574E007D541D /* FancyView.swift */,
 			);
@@ -212,6 +255,7 @@
 				850C5AE81E54574E007D541D /* GoogleService-Info.plist in Resources */,
 				850C5ADB1E545676007D541D /* Assets.xcassets in Resources */,
 				850C5AEF1E5458B5007D541D /* Main.storyboard in Resources */,
+				8574103B1E576233001F93C1 /* splash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,14 +315,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				850C5AE51E54574E007D541D /* AppDelegate.swift in Sources */,
+				857410371E574D91001F93C1 /* Pets.swift in Sources */,
+				8574101D1E55C2D5001F93C1 /* Post.swift in Sources */,
 				857410191E546C78001F93C1 /* UploadPhotoViewController.swift in Sources */,
 				850C5AD91E545656007D541D /* UserCell.swift in Sources */,
+				857410391E574FBC001F93C1 /* WelcomeViewController.swift in Sources */,
 				850C5AD31E5455FB007D541D /* LoginViewController.swift in Sources */,
 				850C5AD41E5455FB007D541D /* SignupViewController.swift in Sources */,
 				850C5AD51E5455FB007D541D /* UsersViewController.swift in Sources */,
 				850C5AE61E54574E007D541D /* CircleView.swift in Sources */,
 				850C5AE71E54574E007D541D /* FancyView.swift in Sources */,
+				857410361E574D91001F93C1 /* DataService.swift in Sources */,
 				850C5AD71E545640007D541D /* User.swift in Sources */,
+				857410211E574161001F93C1 /* RoundBtn.swift in Sources */,
+				8574101F1E55C4CC001F93C1 /* FeedViewController.swift in Sources */,
+				857410231E5744A3001F93C1 /* SetUPViewController.swift in Sources */,
+				8574101B1E55966E001F93C1 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,9 +457,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GUJHFYRL49;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Pets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.elmunei.Pets;
+				PRODUCT_BUNDLE_IDENTIFIER = net.elmunei.Pets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -419,9 +475,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GUJHFYRL49;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Pets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.elmunei.Pets;
+				PRODUCT_BUNDLE_IDENTIFIER = net.elmunei.Pets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

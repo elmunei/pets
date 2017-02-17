@@ -20,6 +20,7 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         
         retrieveUsers()
+         
     }
 
 

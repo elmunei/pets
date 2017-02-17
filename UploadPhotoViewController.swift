@@ -50,6 +50,8 @@ class UploadPhotoViewController: UIViewController, UIImagePickerControllerDelega
    
     @IBAction func postPressed(_ sender: Any) {
         
+        AppDelegate.instance().showActivityIndicator()
+        
         let uid = FIRAuth.auth()!.currentUser!.uid
         let ref = FIRDatabase.database().reference()
         let storage = FIRStorage.storage().reference(forURL: "gs://pets-9778d.appspot.com")
@@ -63,6 +65,7 @@ class UploadPhotoViewController: UIViewController, UIImagePickerControllerDelega
         
             if error != nil {
                 print(error!.localizedDescription)
+                AppDelegate.instance().dismissActivityIndicator()
                 return
             
             }
@@ -77,6 +80,8 @@ class UploadPhotoViewController: UIViewController, UIImagePickerControllerDelega
                     let postFeed = ["\(key)" : feed]
                     
                     ref.child("posts").updateChildValues(postFeed)
+                    
+                    AppDelegate.instance().dismissActivityIndicator()
                     
                     self.dismiss(animated: true, completion: nil)
                 

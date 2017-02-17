@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SignupViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SignupViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate,  UITextViewDelegate  {
     
     
     @IBOutlet weak var nameField: UITextField!
@@ -18,6 +18,9 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var comPwField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var regScrollView: UIScrollView!
+    
+    
     
     let picker = UIImagePickerController()
     var userStorage: FIRStorageReference!
@@ -28,12 +31,64 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         picker.delegate = self
         
+        regScrollView.becomeFirstResponder()
+        nameField.delegate = self
+        emailField.delegate = self
+        password.delegate = self
+        comPwField.delegate = self
+        
+        imageView.layer.cornerRadius = imageView.frame.size.width / 2
+        imageView.clipsToBounds = true
+        
+        
         let storage = FIRStorage.storage().reference(forURL: "gs://pets-9778d.appspot.com")
         
         ref = FIRDatabase.database().reference()
         userStorage = storage.child("users")
 
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        if (textField == nameField)
+        {
+            emailField.becomeFirstResponder()
+            return true
+        }
+            
+        else if (textField == emailField)
+        {
+            password.becomeFirstResponder()
+            return true
+        }
+            
+        else if (textField == password)
+        {
+            comPwField.becomeFirstResponder()
+            return true
+        }
+        
+        else if (textField == comPwField)
+        {
+            comPwField.resignFirstResponder()
+            return true
+        }
+        return false
+    }
+    
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        regScrollView.setContentOffset(CGPoint(x: 0, y:70), animated: true)
+        
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        regScrollView.setContentOffset(CGPoint(x: 0, y:0), animated: true)
+        
+        return true
+    }
+
+    
 
 
     @IBAction func selectImagePressed(_ sender: Any) {
@@ -52,7 +107,15 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func backBTN(_ sender: Any) {
+         self.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
     @IBAction func nextPressed(_ sender: Any) {
+        
+        AppDelegate.instance().showActivityIndicator()
         
         guard nameField.text != "", emailField.text != "", password.text != "", comPwField.text != "" else { return}
         
@@ -61,7 +124,19 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
                 
                 
                 if let error = error {
-                    print(error.localizedDescription)
+                    let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+                    
+                    let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+                        
+                    }
+                    
+                    alertController.addAction(OKAction)
+                    
+                    AppDelegate.instance().dismissActivityIndicator()
+                    
+                    self.present(alertController, animated: true, completion:nil)
+                    
+                    
                 }
                 
                 if let user = user {
@@ -74,14 +149,40 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
                     
                     let data = UIImageJPEGRepresentation(self.imageView.image!, 0.5)
                     
-                    let uploadTask = imageRef.put(data!, metadata: nil, completion: { (metadata, err) in
+                    let metadata = FIRStorageMetadata()
+                    
+                    metadata.contentType = "image/jpeg"
+                    
+                    let uploadTask = imageRef.put(data!, metadata: metadata, completion: { (metadata, err) in
                         if err != nil {
-                            print(err!.localizedDescription)
+                            
+                            let alertController = UIAlertController(title: "Error", message: err!.localizedDescription, preferredStyle: .alert)
+                            
+                            let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+                                
+                            }
+                            
+                            alertController.addAction(OKAction)
+                            
+                            AppDelegate.instance().dismissActivityIndicator()
+                            
+                            self.present(alertController, animated: true, completion:nil)
                         }
                         
                         imageRef.downloadURL(completion: { (url, er) in
                             if er != nil {
-                                print(er!.localizedDescription)
+                                
+                                let alertController = UIAlertController(title: "Error", message: err!.localizedDescription, preferredStyle: .alert)
+                                
+                                let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+                                    
+                                }
+                                
+                                alertController.addAction(OKAction)
+                                
+                                AppDelegate.instance().dismissActivityIndicator()
+                                
+                                self.present(alertController, animated: true, completion:nil)
                             }
                             
                             
@@ -93,6 +194,7 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
                                 
                                 self.ref.child("users").child(user.uid).setValue(userInfo)
                                 
+                                AppDelegate.instance().dismissActivityIndicator()
                                 
                                 let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "usersVC")
                                 
@@ -114,7 +216,16 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
             
             
         } else {
-            print("Password does not match")
+            let alertController = UIAlertController(title: "Error", message: "Passwords do not match", preferredStyle: .alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+                
+            }
+            
+            alertController.addAction(OKAction)
+            
+            AppDelegate.instance().dismissActivityIndicator()
+            self.present(alertController, animated: true, completion:nil)
         }
         
         
