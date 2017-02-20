@@ -54,6 +54,31 @@ class SetUPViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
     @IBAction func submitBtn(_ sender: Any) {
         AppDelegate.instance().showActivityIndicator()
+        
+        if nameTextField.text == "" {
+            let alertController = UIAlertController(title: "Error", message: "Username cannot be blank", preferredStyle: .alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+                
+            }
+            
+            alertController.addAction(OKAction)
+            
+            
+            
+            self.present(alertController, animated: true, completion:nil)
+
+            print("error!")
+            AppDelegate.instance().dismissActivityIndicator()
+
+        
+            return
+        
+        
+        }
+        
+        
+        
         if signUpProPic != nil && nameTextField.text != nil {
             
             
@@ -73,6 +98,9 @@ class SetUPViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 if error != nil {
                     
                     print("error!")
+                    AppDelegate.instance().dismissActivityIndicator()
+                    
+                    return
                     
                 }
                 else {
@@ -94,8 +122,10 @@ class SetUPViewController: UIViewController, UIImagePickerControllerDelegate, UI
                         
                         AppDelegate.instance().dismissActivityIndicator()
                         
-                        let viewController = self.storyboard!.instantiateViewController(withIdentifier: "usersVC")
-                        self.present(viewController, animated: true, completion: nil)
+                        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeVC") as! UITabBarController
+                        vc.selectedIndex = 0
+                        
+                        self.present(vc, animated: true, completion: nil)
                         
                     }
                     

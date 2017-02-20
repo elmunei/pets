@@ -16,7 +16,24 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        FIRAuth.auth()?.addStateDidChangeListener ({
+            auth, user in
+            
+            if user != nil {
+                
+                print("user already signed in")
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeVC") as! UITabBarController
+                vc.selectedIndex = 0
+                
+                self.present(vc, animated: true, completion: nil)
+            } else {
+                print("user not signed in")
+                let vc = self.storyboard!.instantiateViewController(withIdentifier: "Welcome")
+                self.present(vc, animated: true, completion: nil)
+            }
+        })
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,8 +42,8 @@ class WelcomeViewController: UIViewController {
     }
     
     
-    @IBAction func facebookbtn(_ sender: Any) {
-        
+  
+    @IBAction func fbButton(_ sender: Any) {
         let fbLoginButton = FBSDKLoginManager()
         
         //  fbLoginButton.readPermissions =
@@ -55,7 +72,6 @@ class WelcomeViewController: UIViewController {
                 
             }
         }
-
     }
     
     

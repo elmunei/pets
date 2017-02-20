@@ -32,7 +32,6 @@
 		857410361E574D91001F93C1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857410341E574D91001F93C1 /* DataService.swift */; };
 		857410371E574D91001F93C1 /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857410351E574D91001F93C1 /* Pets.swift */; };
 		857410391E574FBC001F93C1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857410381E574FBC001F93C1 /* WelcomeViewController.swift */; };
-		8574103B1E576233001F93C1 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 8574103A1E576233001F93C1 /* splash.png */; };
 		D04D2731EA70C85B1EC20889 /* Pods_Pets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B053188B63224CA5DE8B987C /* Pods_Pets.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 		857410341E574D91001F93C1 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = SOURCE_ROOT; };
 		857410351E574D91001F93C1 /* Pets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = SOURCE_ROOT; };
 		857410381E574FBC001F93C1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
-		8574103A1E576233001F93C1 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = Pets/Assets.xcassets/splash.png; sourceTree = SOURCE_ROOT; };
 		B053188B63224CA5DE8B987C /* Pods_Pets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26C511E9B41D0C70CEA493F /* Pods-Pets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pets/Pods-Pets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +145,6 @@
 				850C5AE01E54574E007D541D /* AppDelegate.swift */,
 				850C5AE31E54574E007D541D /* GoogleService-Info.plist */,
 				850C5AE41E54574E007D541D /* Info.plist */,
-				8574103A1E576233001F93C1 /* splash.png */,
 				850C5AED1E5458B5007D541D /* Main.storyboard */,
 				850C5AEA1E5458AB007D541D /* LaunchScreen.storyboard */,
 			);
@@ -219,7 +216,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Vasil Nunev";
+				ORGANIZATIONNAME = "Elvis Tapfumanei";
 				TargetAttributes = {
 					38FEDBC21DEB513200EF3DFE = {
 						CreatedOnToolsVersion = 8.1;
@@ -255,7 +252,6 @@
 				850C5AE81E54574E007D541D /* GoogleService-Info.plist in Resources */,
 				850C5ADB1E545676007D541D /* Assets.xcassets in Resources */,
 				850C5AEF1E5458B5007D541D /* Main.storyboard in Resources */,
-				8574103B1E576233001F93C1 /* splash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

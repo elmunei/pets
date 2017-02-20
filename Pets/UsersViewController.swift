@@ -126,7 +126,25 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @IBAction func logOutPressed(_ sender: Any) {
+        
+        
+        if FIRAuth.auth()?.currentUser != nil {
+            do {
+                try FIRAuth.auth()?.signOut()
+                
+                print("Elvis: user logged out")
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Welcome")
+                present(vc, animated: true, completion: nil)
+                
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }
+        
     }
+
+        
+    
 
 }
 

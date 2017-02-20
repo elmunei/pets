@@ -52,11 +52,13 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
                                         for each in self.following {
                                             if each == userID {
                                                 let posst = Post()
-                                                if let author = post["author"] as? String, let likes = post["likes"] as? Int, let pathToImage = post["pathToImage"] as? String, let postID = post["postID"] as? String {
+                                                if let author = post["author"] as? String,  let likes = post["likes"] as? Int, let pathToImage = post["pathToImage"] as? String,  let postID = post["postID"] as? String {
                                                     
                                                     posst.author = author
                                                     posst.likes = likes
+                                                    
                                                     posst.pathToImage = pathToImage
+                                                   
                                                     posst.postID = postID
                                                     posst.userID = userID
                                                     
@@ -108,9 +110,9 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         cell.postImage.downloadImage(from: self.posts[indexPath.row].pathToImage)
         cell.authorLabel.text = self.posts[indexPath.row].author
-        cell.likesLabel.text = "\(self.posts[indexPath.row].likes!) Likes"
+        cell.likesLabel.text = "\(self.posts[indexPath.row].likes!)"
         cell.postID = self.posts[indexPath.row].postID
-        
+               
         for person in self.posts[indexPath.row].peopleWhoLike {
             if person == FIRAuth.auth()!.currentUser!.uid {
                 cell.likeBtn.isHidden = true

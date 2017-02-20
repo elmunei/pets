@@ -108,7 +108,8 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     @IBAction func backBTN(_ sender: Any) {
-         self.dismiss(animated: true, completion: nil)
+//        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Welcome")
+//        present(vc, animated: true, completion: nil)
         
     }
     
@@ -196,7 +197,10 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
                                 
                                 AppDelegate.instance().dismissActivityIndicator()
                                 
-                                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "usersVC")
+                                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeVC") as! UITabBarController
+                                vc.selectedIndex = 0
+                                
+                             
                                 
                                 self.present(vc, animated: true, completion: nil)
                                 
